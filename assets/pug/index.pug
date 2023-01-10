@@ -1,0 +1,256 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
+block content_block
+	section.hero 
+		.section_in
+			.hero_main
+				.hero_content
+					h1 Строим надежные крыши «под ключ»
+					.hero_link 
+						p за 30 дней
+				.hero_bottom 
+					.hero_form_w
+						.hero_form_content
+							h2 Оставьте нам заявку
+							.hero_policy!='Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете <a href="#">Политику Конфиденциальности</a>'
+						form(action="").hero_form
+							.hero_form_input
+								input(type="text" placeholder="Имя")
+							.hero_form_input
+								input(type="tel" placeholder="Телефон")
+							.hero_form_btn 
+								button(type="submit") Отправить
+					.hero_logo
+						img(src="i/logo.png", alt="")
+	section.choise 
+		.section_in 
+			.choise_main
+				.choise_main_w
+					h2 Почему нас выбирают?
+					p Высокое качество выполняемых работ - это основная цель нашей компании. Наш девиз - творить, а не вытворять. Мы хотим донести до каждого нашего клиента, что значит качественное строительство.
+				.choise_main_list  
+					.chose_label
+						ul
+							li
+								.label_img 
+									img(src="i/icons/padlock.svg", alt="")
+								.label_txt
+									p Прозрачная финансовая система 
+									span Стоимость работ фиксирована и не меняется в процессе монтажа.
+							li
+								.label_img
+									img(src="i/icons/star.svg", alt="")
+								.label_txt
+									p Опыт 
+									span За нашими плечами - более 6-ти лет работы, а также сотни готовых проектов со счастливыми жильцами.
+							li
+								.label_img
+									img(src="i/icons/quality.svg", alt="")
+								.label_txt
+									p Гарантия 
+									span Гарантия на все виды работ 10 лет!
+							li
+								.label_img
+									img(src="i/icons/roof.svg", alt="")
+								.label_txt
+									p Технологии 
+									span Мы применяем самые современные и проверенные материалы. Прямые поставки с заводов ведущих производителей.
+							li
+								.label_img
+									img(src="i/icons/moneybag.svg", alt="")
+								.label_txt
+									p Цена 
+									span Вы не переплачиваете за огромный штат менеджеров и прорабов. У нас нет скрытых комиссий и надбавок.
+							li
+								.label_img
+									img(src="i/icons/handshake.svg", alt="")
+								.label_txt
+									p Коллектив 
+									span Все мастера - славяне, граждане РФ. Вам будет комфортно взаимодействовать.								
+					.choise_galery
+						ul 
+							li
+								img(src="i/galery/photo1.png", alt="") 
+							li
+								img(src="i/galery/photo2.png", alt="") 
+							li 
+								img(src="i/galery/photo3.png", alt="") 
+							li
+								img(src="i/galery/photo4.png", alt="")
+	section.price 
+		.section_in 
+			.price_main
+				.price_head 
+					h2 Цены
+				.price_content 
+					ul 
+						li
+							.content_item_img 
+								img(src="i/galery/prof.png", alt="") 
+							.content_item_txt 
+								h3 Профнастил
+								ul 
+									li
+										p Монтаж стропил, мембраны, профлиста
+										span — 1400 ₽/м2
+									li
+										p Монтаж «под ключ» с утеплением, водосточной системой и подшивкой софитов
+										span — 2000 ₽/м2
+							.content_item_btn
+								button(type="button") Заказать
+						li
+							.content_item_img 
+								img(src="i/galery/ond.png", alt="") 
+							.content_item_txt 
+								h3 Ондулин
+								ul 
+									li
+										p Монтаж стропил, мембраны, ондулина
+										span — 1400 ₽/м2
+									li
+										p Монтаж «под ключ» с утеплением, водосточной системой и подшивкой софитов
+										span — 2000 ₽/м2
+							.content_item_btn
+								button(type="button") Заказать
+						li
+							.content_item_img 
+								img(src="i/galery/met.png", alt="") 
+							.content_item_txt 
+								h3 Металлочерепица
+								ul 
+									li
+										p Монтаж стропил, мембраны, металлочерепицы
+										span — 1600 ₽/м2
+									li
+										p Монтаж «под ключ» с утеплением, водосточной системой и подшивкой софитов
+										span — 2200 ₽/м2
+							.content_item_btn
+								button(type="button") Заказать
+						li
+							.content_item_img 
+								img(src="i/galery/bit.png", alt="") 
+							.content_item_txt 
+								h3 Битумная черепица
+								ul 
+									li
+										p Монтаж стропил, мембраны, битумной черепицы
+										span — 1800 ₽/м2
+									li
+										p Монтаж «под ключ» с утеплением, водосточной системой и подшивкой софитов
+										span — 2400 ₽/м2
+							.content_item_btn
+								button(type="button") Заказать
+	section.works
+		.section_in
+			.works_main 
+				.works_content 
+					h2 Выполненные работы
+				.works_slider_w
+					.works_slider.swiper 
+						.swiper-wrapper
+								.swiper-slide 
+									.works_slide 
+										a(href="i/slide/slide1.png") 
+											img(src="i/slide/slide1.png", alt="")
+								.swiper-slide 
+									.works_slide 
+										a(href="i/slide/slide2.png") 
+											img(src="i/slide/slide2.png", alt="")
+								.swiper-slide 
+									.works_slide 
+										a(href="i/slide/slide3.png") 
+											img(src="i/slide/slide3.png", alt="")
+								.swiper-slide 
+									.works_slide 
+										a(href="i/slide/slide2.png") 
+											img(src="i/slide/slide2.png", alt="")
+								.swiper-slide 
+									.works_slide 
+										a(href="i/slide/slide3.png") 
+											img(src="i/slide/slide3.png", alt="")
+								.swiper-slide 
+									.works_slide 
+										a(href="i/slide/slide4.png") 
+											img(src="i/slide/slide4.png", alt="")
+								.swiper-slide 
+									.works_slide 
+										a(href="i/slide/slide4.png") 
+											img(src="i/slide/slide3.png", alt="")
+								.swiper-slide 
+									.works_slide 
+										a(href="i/slide/slide4.png") 
+											img(src="i/slide/slide2.png", alt="")
+								.swiper-slide 
+									.works_slide 
+										a(href="i/slide/slide4.png") 
+											img(src="i/slide/slide1.png", alt="")
+					.works_slider_nav 
+						.works_slider_btn.previews 
+							button(type="button")
+								+icon('previews')
+						.works_slider_btn.next 
+							button(type="button")
+								+icon('next')
+	section.reviews
+		.section_in 
+			.reviews_main 
+				.reviews_head 
+					h2 Отзывы
+					ul.reviews_list
+						li
+							.reivews_item_head 
+								h4 МИХАИЛ
+								ul.reviews_stars  
+									-for(i = 0; i < 5; i++)
+										li
+											+icon('stars') 
+							.reviews_item_txt 
+								p Бригада делала нам демонтаж старой крыши и новую крышу на площади 200 кв.м, параллельно поправили крышу гаража. Цена как и было обговорено совпала с итоговым прайсом. Сроки затянули, не критично, но мы особо и не подгоняли. Осенью обращались к ним же, за утеплением чердака, работой так же остались довольны.
+							.reviews_btn_more 
+								button(type="button") Показать больше
+						li
+							.reivews_item_head 
+								h4 МИХАИЛ
+								ul.reviews_stars 
+									-for(i = 0; i < 5; i++)
+										li
+											+icon('stars') 
+							.reviews_item_txt 
+								p Бригада делала нам демонтаж старой крыши и новую крышу на площади 200 кв.м, параллельно поправили крышу гаража. Цена как и было обговорено совпала с итоговым прайсом. Сроки затянули, не критично, но мы особо и не подгоняли. Осенью обращались к ним же, за утеплением чердака, работой так же остались довольны.
+							.reviews_btn_more 
+								button(type="button") Показать больше
+						li
+							.reivews_item_head 
+								h4 МИХАИЛ
+								ul.reviews_stars 
+									-for(i = 0; i < 5; i++)
+										li
+											+icon('stars') 
+							.reviews_item_txt 
+								p Бригада делала нам демонтаж старой крыши и новую крышу на площади 200 кв.м, параллельно поправили крышу гаража. Цена как и было обговорено совпала с итоговым прайсом. Сроки затянули, не критично, но мы особо и не подгоняли. Осенью обращались к ним же, за утеплением чердака, работой так же остались довольны.
+							.reviews_btn_more 
+								button(type="button") Показать больше
+						li
+							.reivews_item_head 
+								h4 ЕКАТЕРИНА
+								ul.reviews_stars 
+									-for(i = 0; i < 5; i++)
+										li
+											+icon('stars') 
+							.reviews_item_txt 
+								p Бригада произвела демонтаж старой кровли большого дачного дома, поставку материалов и сделала новую. Очень довольны. Ребята (Олег, Ваня) - трудяги, работы производят кропотливо, добротно. Кажется они совсем без вредных привычек, ведут себя крайне честно и интеллигентно, что большая редкость в строительном деле, как мне кажется. Большую часть материалов, в том числе лес и мягкую кровлю, Алексей заказывал сам по очень хорошим ценам. Получилось очень красиво и, кажется, надежно!
+							.reviews_btn_more 
+								button(type="button") Показать больше
+						li
+							.reivews_item_head 
+								h4 ЕКАТЕРИНА
+								ul.reviews_stars 
+									-for(i = 0; i < 5; i++)
+										li
+											+icon('stars') 
+							.reviews_item_txt 
+								p Бригада произвела демонтаж старой кровли большого дачного дома, поставку материалов и сделала новую. Очень довольны. Ребята (Олег, Ваня) - трудяги, работы производят кропотливо, добротно. Кажется они совсем без вредных привычек, ведут себя крайне честно и интеллигентно, что большая редкость в строительном деле, как мне кажется. Большую часть материалов, в том числе лес и мягкую кровлю, Алексей заказывал сам по очень хорошим ценам. Получилось очень красиво и, кажется, надежно!
+							.reviews_btn_more 
+								button(type="button") Показать больше

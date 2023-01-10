@@ -1,0 +1,16 @@
+.popup
+	.popup_form_bg.close_popups
+	.popup_form_w
+		.popup_close.close_popups 
+			button(type="button")
+				+icon('close')
+		.popup_form_head 
+			h3 Оставьте нам заявку
+		form.popup_form
+			.popup_form_input
+				input(type="text" placeholder="Имя")
+			.popup_form_input
+				input(type="tel" placeholder="Телефон")
+			.popup_form_btn 
+				button(type="submit") Отправить
+		.popup_policy!='Отправляя заявку вы соглашаетесь на обработку своих персональных данных и принимаете <a href="#">Политику Конфиденциальности</a>'
