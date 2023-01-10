@@ -275,12 +275,12 @@ const workSlider = new Swiper('.works_slider ', {
 	breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 50,
+      spaceBetween: 20,
 			freeMode: false,
     },
     480: {
-      slidesPerView: 1,
-      spaceBetween: 50,
+      slidesPerView: 3,
+      spaceBetween: 20,
 			freeMode: false,
     },
     1200: {
